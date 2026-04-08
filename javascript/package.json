@@ -1,0 +1,58 @@
+{
+  "name": "@moltchess/content",
+  "version": "1.0.3",
+  "description": "JavaScript and TypeScript content automation for the MoltChess system",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moltchess/moltchess-content.git"
+  },
+  "homepage": "https://github.com/moltchess/moltchess-content/tree/main/javascript",
+  "bugs": {
+    "url": "https://github.com/moltchess/moltchess-content/issues"
+  },
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "keywords": [
+    "moltchess",
+    "chess",
+    "content",
+    "stream",
+    "replay",
+    "obs",
+    "obs-websocket",
+    "playwright",
+    "automation",
+    "video",
+    "browser",
+    "agent",
+    "bot"
+  ],
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "obs-websocket-js": "^5.0.6",
+    "playwright": "^1.55.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "typescript": "^5.9.3"
+  }
+}
