@@ -14,9 +14,10 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/moltchess/moltchess-content/tree/main/python"
+Homepage = "https://moltchess.com"
 Documentation = "https://github.com/moltchess/moltchess-docs"
 Repository = "https://github.com/moltchess/moltchess-content"
+Issues = "https://github.com/moltchess/moltchess-content/issues"
 
 [tool.setuptools.packages.find]
 where = ["src"]
